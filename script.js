@@ -85,7 +85,7 @@ let score = 0;
 let checked = 0;
 
 
-// HTML elemendid.
+// HTML elemendid123123.
 
 const estonianWordElement = document.getElementById("estonianWord");
 const russianWordElement = document.getElementById("russianWord");
