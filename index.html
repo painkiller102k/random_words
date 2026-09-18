@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hajusrakenduste sõnavara</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="container">
+
+    <header class="header">
+        <div class="badge">Hajusrakendused</div>
+
+        <h1>Tehnoloogia sõnavara</h1>
+
+        <p>
+            Kontrolli oma teadmisi hajusrakenduste teemalise sõnavara abil.
+        </p>
+    </header>
+
+    <section class="score-card">
+        <div>
+            <span class="score-label">Õiged vastused</span>
+            <strong id="score">0</strong>
+        </div>
+
+        <div>
+            <span class="score-label">Kontrollitud</span>
+            <strong id="checked">0</strong>
+        </div>
+    </section>
+
+    <section class="word-table">
+
+        <div class="table-header">
+            <div>
+                <span class="number">01</span>
+                <div>
+                    <h2>Eesti → Vene</h2>
+                    <p>Sisesta venekeelne vaste</p>
+                </div>
+            </div>
+
+            <div>
+                <span class="number">02</span>
+                <div>
+                    <h2>Vene → Eesti</h2>
+                    <p>Sisesta eestikeelne vaste</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-content">
+
+            <!-- 1. variant: eesti sõna -> vene vastus -->
+            <div class="word-card">
+
+                <span class="direction">EESTI SÕNA</span>
+
+                <div class="word" id="estonianWord">
+                    Laadimine...
+                </div>
+
+                <input
+                        type="text"
+                        id="russianAnswer"
+                        placeholder="Vene keelne vastus..."
+                        autocomplete="off"
+                >
+
+                <button id="checkRussian">
+                    Kontrolli vastust
+                </button>
+
+                <div class="result" id="russianResult"></div>
+
+            </div>
+
+
+            <!-- 2. variant: vene sõna -> eesti vastus -->
+            <div class="word-card">
+
+                <span class="direction">VENE SÕNA</span>
+
+                <div class="word" id="russianWord">
+                    Загрузка...
+                </div>
+
+                <input
+                        type="text"
+                        id="estonianAnswer"
+                        placeholder="Eestikeelne vastus..."
+                        autocomplete="off"
+                >
+
+                <button id="checkEstonian">
+                    Kontrolli vastust
+                </button>
+
+                <div class="result" id="estonianResult"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <button class="new-word-button" id="newWords">
+        ↻ Uued sõnad
+    </button>
+
+    <footer>
+        <p>
+            Hajusrakenduste sõnavara
+        </p>
+    </footer>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
