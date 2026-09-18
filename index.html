@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <main class="container">
@@ -22,7 +23,9 @@
         </p>
     </header>
 
+
     <section class="score-card">
+
         <div>
             <span class="score-label">Õiged vastused</span>
             <strong id="score">0</strong>
@@ -32,31 +35,41 @@
             <span class="score-label">Kontrollitud</span>
             <strong id="checked">0</strong>
         </div>
+
     </section>
-    <!-- table -->
+
+
     <section class="word-table">
 
         <div class="table-header">
+
             <div>
                 <span class="number">01</span>
+
                 <div>
                     <h2>Eesti → Vene</h2>
-                    <p>Sisesta venekeelne vaste</p>
+                    <p>Leia venekeelne vaste</p>
                 </div>
             </div>
+
 
             <div>
                 <span class="number">02</span>
+
                 <div>
                     <h2>Vene → Eesti</h2>
-                    <p>Sisesta eestikeelne vaste</p>
+                    <p>Leia eestikeelne vaste</p>
                 </div>
             </div>
+
         </div>
+
 
         <div class="table-content">
 
-            <!-- 1. variant: eesti sõna -> vene vastus -->
+
+            <!-- VASAK POOL: Eesti -> Vene -->
+
             <div class="word-card">
 
                 <span class="direction">EESTI SÕNA</span>
@@ -65,23 +78,56 @@
                     Laadimine...
                 </div>
 
+
+                <!-- Vastuse kirjutamine -->
+
                 <input
                         type="text"
                         id="russianAnswer"
-                        placeholder="Vene keelne vastus..."
+                        placeholder="Kirjuta venekeelne vaste..."
                         autocomplete="off"
                 >
 
                 <button id="checkRussian">
-                    Kontrolli vastust
+                    Kontrolli kirjutatud vastust
                 </button>
 
+
+                <!-- Vastuse tulemus -->
+
                 <div class="result" id="russianResult"></div>
+
+
+                <!-- Võimalus valida dropdownist -->
+
+                <div class="select-section">
+
+                    <label for="russianSelect">
+                        Või vali vastus nimekirjast
+                    </label>
+
+                    <select id="russianSelect">
+
+                        <option value="">
+                            Vali venekeelne vastus...
+                        </option>
+
+                    </select>
+
+                    <button
+                            class="select-button"
+                            id="selectRussian"
+                    >
+                        Kontrolli valitud vastust
+                    </button>
+
+                </div>
 
             </div>
 
 
-            <!-- 2. variant: vene sõna -> eesti vastus -->
+            <!-- PAREM POOL: Vene -> Eesti -->
+
             <div class="word-card">
 
                 <span class="direction">VENE SÕNA</span>
@@ -90,18 +136,50 @@
                     Загрузка...
                 </div>
 
+
+                <!-- Vastuse kirjutamine -->
+
                 <input
                         type="text"
                         id="estonianAnswer"
-                        placeholder="Eestikeelne vastus..."
+                        placeholder="Kirjuta eestikeelne vaste..."
                         autocomplete="off"
                 >
 
                 <button id="checkEstonian">
-                    Kontrolli vastust
+                    Kontrolli kirjutatud vastust
                 </button>
 
+
+                <!-- Vastuse tulemus -->
+
                 <div class="result" id="estonianResult"></div>
+
+
+                <!-- Võimalus valida dropdownist -->
+
+                <div class="select-section">
+
+                    <label for="estonianSelect">
+                        Või vali vastus nimekirjast
+                    </label>
+
+                    <select id="estonianSelect">
+
+                        <option value="">
+                            Vali eestikeelne vastus...
+                        </option>
+
+                    </select>
+
+                    <button
+                            class="select-button"
+                            id="selectEstonian"
+                    >
+                        Kontrolli valitud vastust
+                    </button>
+
+                </div>
 
             </div>
 
@@ -109,9 +187,14 @@
 
     </section>
 
-    <button class="new-word-button" id="newWords">
+
+    <button
+            class="new-word-button"
+            id="newWords"
+    >
         ↻ Uued sõnad
     </button>
+
 
     <footer>
         <p>
@@ -120,6 +203,7 @@
     </footer>
 
 </main>
+
 
 <script src="script.js"></script>
 
