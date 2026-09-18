@@ -1,6 +1,6 @@
 // Hajusrakenduste teemaline sõnavara.
 // Iga sõna sisaldab eestikeelset ja venekeelset vastet.
-
+// kõik sõnad
 const words = [
     {
         et: "hajusrakendus",
@@ -27,24 +27,12 @@ const words = [
         ru: "веб-сервис"
     },
     {
-        et: "API",
-        ru: "API"
-    },
-    {
-        et: "REST API",
-        ru: "REST API"
-    },
-    {
         et: "HTTP päring",
         ru: "HTTP запрос"
     },
     {
         et: "endpoint",
         ru: "конечная точка"
-    },
-    {
-        et: "JSON",
-        ru: "JSON"
     },
     {
         et: "pilveteenus",
